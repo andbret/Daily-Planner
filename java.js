@@ -32,9 +32,25 @@ for(var i=0; i<elements.length; i++) {
 
 
 
+var formInput = document.querySelector("#test9");
+$("#submit").click(function(){
+    event.preventDefault();
+    console.log("Form was submitted!");
+    
+    var reminderText = formInput.value;
 
-// document.getElementById("11").style.backgroundColor = "lightblue";
+    console.log(reminderText);
+    document.getElementById("test9").placeholder = reminderText;
+    localStorage.setItem("toost", reminderText);
+    var ihope = localStorage.getItem("toost");
+    document.getElementById("test10").placeholder = ihope;
+       
+      
 
-// var tryy = parseInt(document.getElementById("11"));
-// console.log(tryy);
+   
+      
+  });
+
+
+
 
