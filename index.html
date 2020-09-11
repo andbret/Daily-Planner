@@ -11,7 +11,8 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  <title>Work Day Scheduler</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Work Day Scheduler</title>
 </head>
 
 <body>
@@ -23,106 +24,116 @@
 
   <div class="container">
     <form>
-
-      
-
-
-
-
-
-
-
-<!-- 9am -->
-<form id="test-form" method="POST">
-      <div class="form-group row m-0">
-        <label for="colFormLabelLg" class="col-sm-1 col-form-label col-form-label-lg mt-4">9am</label>
-        <div class="col-sm-11" style="display: flex;">
-          <textarea type="text" class="form-control form-control-lg p-2" style="height: 100px;" name="9" id="test9"
-            placeholder="col-form-label-lg"></textarea>
-           
-            <button type="submit" class="btn btn-primary" style="height: 100px; width: 100px;" name="9" id ="submit9" >Submit</button>
+      <!-- first form group -->
+      <!-- 9am -->
+        <div class="form-group row m-0">
+          <!-- time label -->
+          <label for="colFormLabelLg" class="col-sm-1 col-form-label col-form-label-lg mt-4">9am</label>
+          <!-- sets the boundary for the form -->
+          <div class="col-sm-11" style="display: flex;">
+            <!-- area to write memos -->
+            <textarea type="text" class="form-control form-control-lg p-2" style="height: 100px;" name="9" id="ele9"></textarea>
+            <!-- submit button -->
+            <button type="submit" class="btn btn-primary" style="height: 100px; width: 100px;" name="9"
+              id="submit9">Submit</button>
+          </div>
         </div>
-      </div>
-    </form>
+     
 
       <!-- 10am -->
       <div class="form-group row m-0">
         <label for="colFormLabelLg" class="col-sm-1 col-form-label col-form-label-lg mt-4">10am</label>
         <div class="col-sm-11" style="display: flex;">
-          <textarea type="text" class="form-control form-control-lg p-2" style="height: 100px;" name="10" id="test10"></textarea>
-            <button type="submit" class="btn btn-primary" style="height: 100px; width: 100px;"name="10" id ="submit10" >Submit</button>
+          <textarea type="text" class="form-control form-control-lg p-2" style="height: 100px;" name="10"
+            id="ele10"></textarea>
+          <button type="submit" class="btn btn-primary" style="height: 100px; width: 100px;" name="10"
+            id="submit10">Submit</button>
         </div>
       </div>
 
-            <!-- 11am -->
-            <div class="form-group row m-0">
-              <label for="colFormLabelLg" class="col-sm-1 col-form-label col-form-label-lg mt-4">11am</label>
-              <div class="col-sm-11" style="display: flex;">
-                <textarea type="text" class="form-control form-control-lg p-2" style="height: 100px;" name="11" id="test11"></textarea>
+      <!-- 11am -->
+      <div class="form-group row m-0">
+        <label for="colFormLabelLg" class="col-sm-1 col-form-label col-form-label-lg mt-4">11am</label>
+        <div class="col-sm-11" style="display: flex;">
+          <textarea type="text" class="form-control form-control-lg p-2" style="height: 100px;" name="11"
+            id="ele11"></textarea>
 
-                  <button type="submit" class="btn btn-primary" style="height: 100px; width: 100px;"name="11" id ="submit11" >Submit</button>
-              </div>
-            </div>
+          <button type="submit" class="btn btn-primary" style="height: 100px; width: 100px;" name="11"
+            id="submit11">Submit</button>
+        </div>
+      </div>
 
-                  <!-- 12pm -->
+      <!-- 12pm -->
       <div class="form-group row m-0">
         <label for="colFormLabelLg" class="col-sm-1 col-form-label col-form-label-lg mt-4">12pm</label>
         <div class="col-sm-11" style="display: flex;">
-          <textarea type="text" class="form-control form-control-lg p-2" style="height: 100px;" name="12" id="test12"></textarea>
+          <textarea type="text" class="form-control form-control-lg p-2" style="height: 100px;" name="12"
+            id="ele12"></textarea>
 
-            <button type="submit" class="btn btn-primary" style="height: 100px; width: 100px;" name="12" id ="submit12" >Submit</button>
+          <button type="submit" class="btn btn-primary" style="height: 100px; width: 100px;" name="12"
+            id="submit12">Submit</button>
         </div>
       </div>
 
-            <!-- 1pm -->
-            <div class="form-group row m-0">
-              <label for="colFormLabelLg" class="col-sm-1 col-form-label col-form-label-lg mt-4">1pm</label>
-              <div class="col-sm-11" style="display: flex;">
-                <textarea type="text" class="form-control form-control-lg p-2" style="height: 100px;" name="13" id="test13"></textarea>
+      <!-- 1pm -->
+      <div class="form-group row m-0">
+        <label for="colFormLabelLg" class="col-sm-1 col-form-label col-form-label-lg mt-4">1pm</label>
+        <div class="col-sm-11" style="display: flex;">
+          <textarea type="text" class="form-control form-control-lg p-2" style="height: 100px;" name="13"
+            id="ele13"></textarea>
 
-                  <button type="submit" class="btn btn-primary" style="height: 100px; width: 100px;" name="13" id ="submit13" >Submit</button>
-              </div>
-            </div>
+          <button type="submit" class="btn btn-primary" style="height: 100px; width: 100px;" name="13"
+            id="submit13">Submit</button>
+        </div>
+      </div>
 
-                  <!-- 2pm -->
+      <!-- 2pm -->
       <div class="form-group row m-0">
         <label for="colFormLabelLg" class="col-sm-1 col-form-label col-form-label-lg mt-4">2pm</label>
         <div class="col-sm-11" style="display: flex;">
-          <textarea type="text" class="form-control form-control-lg p-2" style="height: 100px;" name="14" id="test14"></textarea>
+          <textarea type="text" class="form-control form-control-lg p-2" style="height: 100px;" name="14"
+            id="ele14"></textarea>
 
-            <button type="submit" class="btn btn-primary" style="height: 100px; width: 100px;" name="14" id ="submit14" >Submit</button>
+          <button type="submit" class="btn btn-primary" style="height: 100px; width: 100px;" name="14"
+            id="submit14">Submit</button>
         </div>
       </div>
 
-            <!-- 3pm -->
-            <div class="form-group row m-0">
-              <label for="colFormLabelLg" class="col-sm-1 col-form-label col-form-label-lg mt-4">3pm</label>
-              <div class="col-sm-11" style="display: flex;">
-                <textarea type="text" class="form-control form-control-lg p-2" style="height: 100px;" name="15" id="test15"></textarea>
+      <!-- 3pm -->
+      <div class="form-group row m-0">
+        <label for="colFormLabelLg" class="col-sm-1 col-form-label col-form-label-lg mt-4">3pm</label>
+        <div class="col-sm-11" style="display: flex;">
+          <textarea type="text" class="form-control form-control-lg p-2" style="height: 100px;" name="15"
+            id="ele15"></textarea>
 
-                  <button type="submit" class="btn btn-primary" style="height: 100px; width: 100px;"  name="15" id ="submit15" >Submit</button>
-              </div>
-            </div>
+          <button type="submit" class="btn btn-primary" style="height: 100px; width: 100px;" name="15"
+            id="submit15">Submit</button>
+        </div>
+      </div>
 
-                  <!-- 4pm -->
+      <!-- 4pm -->
       <div class="form-group row m-0">
         <label for="colFormLabelLg" class="col-sm-1 col-form-label col-form-label-lg mt-4">4pm</label>
         <div class="col-sm-11" style="display: flex;">
-          <textarea type="text" class="form-control form-control-lg p-2" style="height: 100px;" name="16" id="test16"></textarea>
+          <textarea type="text" class="form-control form-control-lg p-2" style="height: 100px;" name="16"
+            id="ele16"></textarea>
 
-            <button type="submit" class="btn btn-primary" style="height: 100px; width: 100px;" name="16" id ="submit16" >Submit</button>
+          <button type="submit" class="btn btn-primary" style="height: 100px; width: 100px;" name="16"
+            id="submit16">Submit</button>
         </div>
       </div>
 
-            <!-- 5pm -->
-            <div class="form-group row m-0">
-              <label for="colFormLabelLg" class="col-sm-1 col-form-label col-form-label-lg mt-4">5pm</label>
-              <div class="col-sm-11" style="display: flex;">
-                <textarea type="text" class="form-control form-control-lg p-2" style="height: 100px;" name="17" id="test17"></textarea>
+      <!-- 5pm -->
+      <div class="form-group row m-0">
+        <label for="colFormLabelLg" class="col-sm-1 col-form-label col-form-label-lg mt-4">5pm</label>
+        <div class="col-sm-11" style="display: flex;">
+          <textarea type="text" class="form-control form-control-lg p-2" style="height: 100px;" name="17"
+            id="ele17"></textarea>
 
-                  <button type="submit" class="btn btn-primary" style="height: 100px; width: 100px;" name="17" id ="submit17" >Submit</button>
-              </div>
-            </div>
+          <button type="submit" class="btn btn-primary" style="height: 100px; width: 100px;" name="17"
+            id="submit17">Submit</button>
+        </div>
+      </div>
     </form>
 
     </form>
@@ -130,11 +141,11 @@
 
 
 
-  <!-- Timeblocks go here -->
+  
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="moment.js"></script>
   <script src="java.js"></script>
